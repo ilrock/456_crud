@@ -1,0 +1,8 @@
+<div class="container pt-5">
+  <%= simple_form_for @pet do |f| %>
+    <%= f.input :name %>
+    <%= f.input :species %>
+    <%= f.input :found_on %>
+    <%= f.button :submit, class: 'btn btn-primary' %>
+  <% end %>
+</div>

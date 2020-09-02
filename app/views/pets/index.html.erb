@@ -1,0 +1,9 @@
+<%= link_to "Have you found a pet?", new_pet_path %>
+
+<ul>
+  <% @pets.each do |pet| %>
+    <li>
+      <%= link_to pet.name, pet_path(pet) %>
+    </li>
+  <% end %>
+</ul>
